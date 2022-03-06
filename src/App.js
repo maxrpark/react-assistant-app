@@ -1,25 +1,19 @@
-import React from 'react';
-import Todo from './Components/Todo';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-const url = '/api/projects-api';
+import Todo from './Todo';
+import Home from './Home';
+import Navbar from './Components/Navbar';
 
 const App = () => {
-  const [projects, setProjects] = useState([]);
-
-  const getItems = () => {
-    axios.get(url).then((res) => {
-      setProjects(res.data);
-    });
-  };
-  useEffect(() => {
-    getItems();
-  }, []);
-
   return (
     <>
-      <Todo />;
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/todo' element={<Todo />} />
+        </Routes>
+      </Router>
     </>
   );
 };

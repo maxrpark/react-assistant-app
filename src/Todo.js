@@ -109,6 +109,7 @@ const Todo = () => {
 
   return (
     <div className='section-center'>
+      <h2 className='title'>React assistant</h2>
       <div className='alert-container'>
         {showAlert && (
           <div className={`alert-box ${alert.type}`}>
