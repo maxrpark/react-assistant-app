@@ -159,6 +159,7 @@ svg {
   transition: all 0.3s ease-in-out;
   text-transform: capitalize;
   color: var(--primary-danger);
+  margin-top: 1rem;
 }
 .remove-items:hover {
   border: 2px solid var(--primary-white);

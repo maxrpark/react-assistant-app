@@ -35,7 +35,7 @@ const Todo = () => {
             return item;
           })
         );
-        displayAlert('Edited', 'success');
+        displayAlert('Task Edited', 'success');
         setItemValue('');
         setItemID(null);
         setIsEditing(false);
@@ -45,7 +45,7 @@ const Todo = () => {
           value: itemValue,
           isComplete: false,
         };
-        displayAlert('Added', 'success');
+        displayAlert('Task Added', 'success');
         const TodoList = [todoItem, ...todo];
         setTodo(TodoList);
         setItemValue('');
@@ -63,7 +63,7 @@ const Todo = () => {
   const deleteItem = (id) => {
     const todoList = todo.filter((item) => item.id !== id);
     setTodo(todoList);
-    displayAlert('Deleted', 'danger');
+    displayAlert('Task Deleted', 'danger');
     setItemValue('');
     setIsEditing(false);
   };
@@ -83,7 +83,7 @@ const Todo = () => {
       todo.map((item) => {
         if (item.id === id) {
           if (!item.isComplete) {
-            displayAlert('Completed!', 'success');
+            displayAlert('Task Completed', 'success');
           }
           return { ...item, isComplete: !item.isComplete };
         }
