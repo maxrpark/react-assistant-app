@@ -108,7 +108,7 @@ const Todo = () => {
   }, [alert.messege, todo]);
 
   return (
-    <div className='section-center'>
+    <div className='section-center section'>
       <h2 className='title'>React assistant</h2>
       <div className='alert-container'>
         {showAlert && (

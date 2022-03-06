@@ -18,10 +18,14 @@ const Home = () => {
   }, []);
 
   if (projects.length === 0) {
-    return <h2 className='title'>Loading...</h2>;
+    return (
+      <section className='section'>
+        <h2 className='title'>Loading...</h2>;
+      </section>
+    );
   }
   return (
-    <>
+    <section className='section'>
       <h2 className='title'>Assistant</h2>
       <div className='container'>
         {projects.map((project) => {
@@ -57,7 +61,7 @@ const Home = () => {
           );
         })}
       </div>
-    </>
+    </section>
   );
 };
 
