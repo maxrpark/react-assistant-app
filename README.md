@@ -1,17 +1,18 @@
-[build]
+<div align="center">
+<h1>Assistant Apps </h1>
+  
+![alt text](https://img.shields.io/badge/My%20first%20website-2.1.1-green)  ![alt text](https://img.shields.io/badge/Made%20by-Max-brightgreen) ![alt text](https://img.shields.io/badge/Project-Assistant%20Apps-coral) ![alt text](https://img.shields.io/badge/Made%20with-React-blue)
+</div>
 
-command = 'npm run build'
-publish = '/build'
-functions = './functions'
-[[redirects]]
+## Assistant Apps
 
-from = '/api/\*'
-to = '/.netlify/functions/:splat'
-status = 200
-[[redirects]]
+This project is part of Assitant Apps Projects
 
-from = '/\*'
-to = '/index.html'
-status = 200
-build Command
-"build": "CI= react-scripts build"
+The idea of Assistant Apps is to create the same app using different languages or frameworks.
+
+I hope, I keep learning new onces in the future so this project expects more and more.
+
+## Visit the website
+
+You can take a look at the website by clicking the next link
+[Assitant React App](https://assitant-app.netlify.app/).
