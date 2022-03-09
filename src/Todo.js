@@ -25,7 +25,7 @@ const Todo = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (itemValue) {
+    if (itemValue && itemValue.trim() !== '') {
       if (isEditing && itemValue) {
         setTodo(
           todo.map((item) => {
@@ -50,6 +50,8 @@ const Todo = () => {
         setTodo(TodoList);
         setItemValue('');
       }
+    } else {
+      displayAlert('Please Enter Task', 'danger');
     }
   };
   const displayAlert = (messege, type) => {
