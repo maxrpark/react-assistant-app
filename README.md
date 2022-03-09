@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Assistant Apps </h1>
+<h1>Assistant Apps React Version</h1>
   
 ![alt text](https://img.shields.io/badge/My%20first%20website-2.1.1-green)  ![alt text](https://img.shields.io/badge/Made%20by-Max-brightgreen) ![alt text](https://img.shields.io/badge/Project-Assistant%20Apps-coral) ![alt text](https://img.shields.io/badge/Made%20with-React-blue)
 </div>
