@@ -57,11 +57,7 @@ const Home = () => {
                       </svg>
                     </Link>
                   ) : (
-                    <a
-                      href={project.projectUrl}
-                      target='_blank'
-                      rel='noreferrer'
-                    >
+                    <a href={project.projectUrl} rel='noreferrer'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width='24'
