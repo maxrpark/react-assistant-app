@@ -26,6 +26,7 @@ const Home = () => {
   return (
     <section className='section'>
       <h2 className='title'>Assistant</h2>
+      <h3 class="title">Same App with different frameworks or languages</h3>
       <div className='container'>
         {projects.map((project) => {
           return <ProjectCard project={project} key={project.id} />;
