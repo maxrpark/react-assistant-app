@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import TodoItem from './Components/TodoItem';
+import Alert from './Components/Alert';
+import Form from './Components/Form';
 
 const getLocalStorage = () => {
   let todoList = localStorage.getItem('todoList');
@@ -113,26 +115,14 @@ const Todo = () => {
   return (
     <div className='section-center section'>
       <h2 className='title'>React assistant</h2>
-      <div className='alert-container'>
-        {showAlert && (
-          <div className={`alert-box ${alert.type}`}>
-            <p>{alert.messege}</p>
-          </div>
-        )}
-      </div>
+      <Alert showAlert={showAlert} alert={alert} />
       <section className='main-container'>
         <h2>Task List</h2>
-        <form onSubmit={handleSubmit} className='form-container'>
-          <input
-            onChange={(e) => setItemValue(e.target.value)}
-            type='text'
-            value={itemValue}
-            className='input-control'
-            placeholder='Type something...'
-            maxLength={25}
-          />
-        </form>
-
+        <Form
+          setItemValue={setItemValue}
+          handleSubmit={handleSubmit}
+          itemValue={itemValue}
+        />
         <div className='todo-list'>
           <ul className='todo-container'>
             {todo.map((item) => {
